@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Your Name] – IT Support & Systems Technician</title>
+  <meta name="description" content="Portfolio for an IT Support & Systems Technician — home lab, systems, networking, and projects." />
+  <style>
+    :root{
+      --bg: #333333;
+      --panel: #2b2b2b;
+      --text: #e8e8e8;
+      --muted: #cfcfcf;
+      --accent: #4aa3ff;
+      --maxw: 900px;
+      --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px 16px;
+      display:flex;justify-content:center;
+    }
+    .site{max-width:var(--maxw);width:100%}
+    header{
+      display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:18px
+    }
+    h1{font-size:22px;margin:0;font-family:var(--mono);letter-spacing:0.02em}
+    .subtitle{color:var(--muted);font-size:13px}
+    .badge{background:var(--panel);padding:8px 12px;border-radius:8px;color:var(--muted);font-size:13px}
+
+    main{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    h2{margin:0 0 8px 0;color:var(--accent);font-size:16px}
+    p{margin:0 0 10px 0;color:var(--muted)}
+    ul{margin:0;padding-left:18px}
+    li{margin:8px 0}
+    code{background:#222;padding:2px 6px;border-radius:6px;font-family:var(--mono);font-size:13px;color:var(--accent)}
+
+    .projects .project{margin-bottom:12px}
+    .project-title{font-weight:600;color:var(--text)}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .buttons{display:flex;gap:8px}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;font-weight:600;font-size:13px}
+
+    @media (min-width:720px){
+      main{grid-template-columns: 1fr 340px}
+      .projects{grid-column:1}
+      .side{grid-column:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div>
+        <h1>[Your Name] – IT Support & Systems Technician</h1>
+        <div class="subtitle">CompTIA A+ · Network+ · ITF+ · CIOS • Home lab & systems administration</div>
+      </div>
+      <div class="badge">[City, State] · <a href="#contact">Contact</a></div>
+    </header>
+
+    <main>
+      <section class="card projects">
+        <h2>Technical Projects</h2>
+
+        <div class="project">
+          <div class="project-title">Home Server (Debian, Docker, Nextcloud, Forgejo)</div>
+          <div class="small">Configured a Debian-based home server hosting <code>Nextcloud</code>, <code>Forgejo</code>, and containerized services with Docker and Portainer. Runs Samba for local file sharing and supports personal workflows.</div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Raspberry Pi Reverse Proxy & VPN</div>
+          <div class="small">Deployed a Raspberry Pi 3 as a reverse proxy and WireGuard VPN gateway to provide secure remote access to self-hosted applications and services.</div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Custom Desktop Builds</div>
+          <div class="small">Built and configured three desktop systems (two gaming PCs and one server), handling hardware selection, assembly, OS installation, and troubleshooting.</div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Domain & DNS Management</div>
+          <div class="small">Manage personal domain and DNS records through Namecheap to enable external access to selected services while keeping primary systems private.</div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Programming & Tools</div>
+          <div class="small">Learning C and Rust with practical work such as a GUI clock application; using command-line tools and networking utilities (<code>ping</code>, <code>tracert</code>, <code>ipconfig</code>, <code>Nmap</code>, <code>Wireshark</code>) for troubleshooting.</div>
+        </div>
+
+      </section>
+
+      <aside class="card side">
+        <h2>About</h2>
+        <p>I’m an aspiring IT Support and Systems Technician with hands‑on experience in hardware assembly, Linux administration, and home server management. Passionate about reliable systems, practical automation, and continuous learning.</p>
+
+        <h2 style="margin-top:14px">Skills & Technologies</h2>
+        <p class="small">Windows 10/11 · Linux · Command-line tools · Networking utilities (ping, tracert, ipconfig, Nmap, Wireshark) · Docker · Samba · WireGuard</p>
+
+        <h2 style="margin-top:14px">Certifications</h2>
+        <p class="small">CompTIA A+ · CompTIA Network+ · CompTIA ITF+ · CompTIA CIOS</p>
+
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="#projects" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)">Projects</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div id="contact">
+        <strong>Contact</strong>
+        <div class="small">Email: <a href="mailto:youremail@example.com">youremail@example.com</a> · GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a> · LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">linkedin.com/in/yourname</a></div>
+      </div>
+      <div class="small">Site · <a href="https://github.com/yourusername/yourusername.github.io" target="_blank" rel="noopener">Source</a></div>
+    </footer>
+  </div>
+</body>
+</html>
